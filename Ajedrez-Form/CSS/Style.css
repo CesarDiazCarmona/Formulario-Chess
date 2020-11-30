@@ -1,0 +1,36 @@
+#cabecera{
+    background-image: url("cabecera.jpg");
+    width:500px;
+    height:210px;
+    margin: 1px;
+    border-radius: 20px;
+}
+
+body {
+  font  : 21px sans-serif;
+  padding: 30px;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+}
+
+#bFin{
+    background-color: rgb(177, 8, 42);
+    font-family : Georgia;
+}
+
+h1,h2,td,p{
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-left: 30px;
+}
+a{
+  text-align: center;
+  padding: 10px;
+}
+div{
+  background-color: rgb(219, 219, 219);
+  width:550px;
+  height: 455px;
+  margin: 20px;
+  border-radius: 20px;
+}

@@ -1,0 +1,63 @@
+<html>
+<link rel="stylesheet" type="text/css" href="/CSS/Style.css">
+
+
+<head>
+  <center>
+    <h1 id="cabecera"></h1>
+  </center>
+</head>
+
+<body>
+
+  <center>
+
+    <form>
+      <div>
+        <a>Rellene el formulario</a>
+
+        <p>Nombre Usuario: <input type="text" size="39" id="nombreUs"></p>
+
+        <p>Contraseña: <input type="password" id="ct" pattern=".{6,}" size="45"></p>
+
+        <p>Repita la contraseña: <input type="password" id="ct2" pattern=".{6,}" size="33"></p>
+
+        <p>Nombre: <input type="text" size="50" id="nombre"
+            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}">
+        </p>
+
+        <p>Apellidos: <input type="text" size="48" id="apellidos"
+            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}">
+        </p>
+
+        <p>Numero Telefono: <input type="number" size="37" id="tlf" pattern="[0-9]{6,9}"></p>
+
+        <p>Correo Electronico: <input type="text" size="35" id="mail"></style>
+        </p>
+
+        <p>Fecha de nacimiento: <input type="date" id="fecha"></p>
+
+        <a>Sexo:
+          <input type="radio" name="s" value="h"> Hombre
+          <input type="radio" name="s" value="m"> Mujer
+          <input type="radio" name="s" value="o"> Otro
+        </a>
+
+
+      </div>
+
+
+
+
+      <a id="botones">
+        <input onclick="validar()" type="button" value="Enviar" id="bFin">
+        <input type="reset" value="Borrar" id="bFin">
+      </a>
+
+    </form>
+
+  </center>
+  <script language="JavaScript" type="text/javascript" src="Formulario.js"></script>
+</body>
+
+</html>
