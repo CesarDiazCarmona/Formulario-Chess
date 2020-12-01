@@ -9,10 +9,10 @@ function validar() {
   pasw2 = document.getElementById("ct2");
   var valido = new Boolean(true);
 
-  if (pasw.value != pasw2.value) {
-    alert('[ERROR] No coincide la password')
+  if (pasw.value.length < 6 || pasw.value != pasw2.value ) {
+    alert('[ERROR] No coincide la password o esta vacia')
     pasw2.style.border = "red 2px solid"
-    valido = false
+    valido = false;
   } else {
 
     pasw2.style.border = "green 2px solid"
@@ -43,7 +43,7 @@ function validar() {
   } else {
     apes.style.border = "green 2px solid"
   }
-  if (Tlf.value == null || Tlf.value.length < 6 || Tlf.value.length > 9) {
+  if (Tlf.value.length < 6 || Tlf.value.length > 9) {
 
     alert('[ERROR] Telefono esta vacío o es incorrecto.');
     Tlf.style.border = "red 2px solid"
@@ -61,7 +61,7 @@ function validar() {
     email.style.border = "green 2px solid"
   }
   if (valido != false) {
-    window.location.href = "PaginaEnviar.html";
+    window.location.href = "Congratulations.html";
   }
 
 }
